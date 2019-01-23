@@ -1,0 +1,18 @@
+@import './_var'
+@import './_mix'
+
+.box
+    color: $color
+    @include rounded-corners
+    .img
+        width: $width
+        display: block
+    header &
+        color: $color
+    border:
+        width: add(10px,2px)
+        style: solid
+        color: $color
+@each $var in main,sider,footer
+  .#{$var}-item
+    color: #ccc
